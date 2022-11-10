@@ -126,6 +126,7 @@
     fill: $primary-text-color;
     right: 20px;
     top: 20px;
+    transition: fill $animation;
 }
 
 .modal-close-button:hover .close-icon,
@@ -213,7 +214,7 @@ color:$primary-text-color;
 
 
 .modal-input:invalid {
-    border: 1px solid $hover-color;
+    border: 1px solid #ff0000;
   }
 
   .modal-input:placeholder-shown {

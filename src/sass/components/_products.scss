@@ -164,7 +164,8 @@
 
     font-family: inherit;
     cursor: pointer;
-
+    transition: background-color $animation;
+    
     &:hover,
     &:focus {
       background-color: $hover-color;

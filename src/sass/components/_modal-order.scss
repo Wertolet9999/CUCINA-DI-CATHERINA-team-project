@@ -8,7 +8,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   opacity: 1;
   z-index: 10;
-
+  overflow:scroll;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -23,7 +23,7 @@
 
 .modal-order {
   position: absolute;
-  top: 50%;
+ 
   left: 50%;
 
   width: 414px;
@@ -34,7 +34,7 @@
   background-color: $main-background-color;
   color: rgba(243, 243, 243, 1);
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateX(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 414px) {
@@ -67,6 +67,7 @@
 
 .modal-order__icon {
   fill: $primary-text-color;
+  transition: fill $animation;
   &:hover,
   &:focus {
     fill: $hover-color;
@@ -124,7 +125,8 @@
   }
 
   &:invalid {
-    color: red;
+    border-color:#ff0000;;
+    // color: #ff0000;
   }
 
   &::placeholder {
@@ -337,6 +339,8 @@ option {
   background-color: $main-background-color;
   border: 2px solid $primary-text-color;
   fill: transparent;
+  transition: fill $animation,
+  background-color $animation;
 
   .checkbox__input:checked + & {
     background-color: $hover-color;
@@ -359,7 +363,8 @@ option {
   font-size: 20px;
   line-height: calc(24 / 20);
 
-  background-color: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $animation;
+  cursor: pointer;
 
   &:hover,
   &:focus {

@@ -3,7 +3,8 @@
   fill: $primary-text-color;
 }
 .section-hero {
-  background: linear-gradient(237.05deg, #6f6666 1.42%, #100f0f 45.36%);
+  padding-top: 40px;
+  // background: linear-gradient(237.05deg, #6f6666 1.42%, #100f0f 45.36%);
   &___button {
     background-color: $primary-button-color;
     border-radius: 16px;
@@ -15,6 +16,7 @@
     line-height: 1.2;
     margin-bottom: 16px;
     border-style: none;
+    transition: background-color $animation;
     &:hover {
       background-color: $acent-text-color;
       cursor: pointer;
@@ -30,7 +32,6 @@
     font-size: 30px;
     line-height: 1.23;
     padding-left: 8px;
-    padding-top: 40px;
     color: $primary-text-color;
     width: 190px;
     z-index: 2;
@@ -98,6 +99,9 @@
     padding-bottom: 39px;
   }
 }
+.section-hero__list-icon{
+  transition: fill $animation;
+}
 
 .section-hero__list-link {
   &:hover .section-hero__list-icon {
@@ -131,12 +135,13 @@
 // tablet
 @media screen and (min-width: $tablet) {
   .section-hero {
-    background: linear-gradient(
-      228.52deg,
-      rgba(111, 102, 102, 0.9) 4.71%,
-      rgba(16, 15, 15, 0.9) 39.77%,
-      rgba(16, 15, 15, 0.9) 44.21%
-    );
+    padding-top: 72px;
+    // background: linear-gradient(
+    //   228.52deg,
+    //   rgba(111, 102, 102, 0.9) 4.71%,
+    //   rgba(16, 15, 15, 0.9) 39.77%,
+    //   rgba(16, 15, 15, 0.9) 44.21%
+    // );
   }
   .section-hero___button {
     max-width: 302px;
@@ -152,7 +157,6 @@
     line-height: 1.21;
     width: 400px;
     padding-left: 12px;
-    padding-top: 72px;
   }
   .section-hero__title-secondary {
     font-weight: 300;
@@ -208,7 +212,7 @@
 }
 // desktop
 @media screen and (min-width: $desktop) {
-  .section-hero__title {
+  .section-hero {
     padding-top: 100px;
   }
   .section-hero__list {

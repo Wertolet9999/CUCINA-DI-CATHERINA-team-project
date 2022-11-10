@@ -3,16 +3,16 @@ h1 {
 }
 
 // Header
-.header {
-  background: linear-gradient(270deg, #6f6666 2.17%, #100f0f 75.72%);
-  @media (min-width: $tablet) {
-    background: linear-gradient(
-      256.51deg,
-      rgba(111, 102, 102, 0.9) 26.96%,
-      rgba(16, 15, 15, 0.9) 79.08%,
-      rgba(16, 15, 15, 0.9) 79.08%
-    );
-  }
+
+.header-section{
+  background: linear-gradient(237.05deg, #6F6666 1.42%, #100F0F 45.36%);;
+  
+          @media (min-width: $tablet){
+              background: linear-gradient(228.52deg,
+               rgba(111, 102, 102, 0.9) 4.71%,
+               rgba(16, 15, 15, 0.9) 39.77%, 
+               rgba(16, 15, 15, 0.9) 44.21%);
+          }
 }
 
 .main-nav {
@@ -79,27 +79,29 @@ h1 {
   color: $primary-text-color;
   padding-top: 31px;
   padding-bottom: 30px;
-  transition: color $animation &--active {
-    color: $hover-color;
-  }
-
-  &--active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $hover-color;
-  }
-
+  transition: color $animation;
+  
   &:hover,
-  &:focus {
-    color: $hover-color;
+    &:focus {
+      color: $hover-color;
+    }
+
   }
-}
+
+  // &--active::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: -1px;
+  //   display: block;
+  //   width: 100%;
+  //   height: 4px;
+  //   border-radius: 2px;
+  //   background-color: $hover-color;
+  // }
+
+ 
+
 
 .active:hover::after {
   opacity: 1;
