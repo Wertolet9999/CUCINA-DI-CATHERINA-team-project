@@ -56,6 +56,7 @@
 .modal {
     box-sizing: border-box;
     position: absolute;
+    text-align: center;
     top: 0;
     right: 0;
     bottom: 0;
@@ -86,7 +87,7 @@
         border-radius: 16px;
         font-size: 32px;
         font-weight: 700;
-        line-height: 39px;
+        line-height: 39.01px;
         letter-spacing: 0em;
         }
     
@@ -97,7 +98,7 @@
         border-radius: 16px;
         font-size: 32px;
         font-weight: 700;
-        line-height: 39px;
+        line-height: 9.01px;
         letter-spacing: 0em;
         height: 756px;
         }
@@ -183,6 +184,7 @@ color:$primary-text-color;
     display: flex;
     align-items: center;
     padding-bottom: 20px;
+    background-color: $main-background-color;
 }
 
 .modal-area {
@@ -199,7 +201,7 @@ color:$primary-text-color;
     text-align: left;
     box-sizing: border-box;
     border: 1px solid $primary-text-color;
-    background-color: transparent;
+    background: transparent;
     color:$primary-text-color;
     cursor: pointer;
     border-radius: 16px;
@@ -209,8 +211,13 @@ color:$primary-text-color;
     width: 100%;
 }
 
-.modal__input:invalid {
+
+.modal-input:invalid {
     border: 1px solid $hover-color;
+  }
+
+  .modal-input:placeholder-shown {
+    border: 1px solid $primary-text-color;
   }
 
 
@@ -253,7 +260,7 @@ color:$primary-text-color;
     width: 100%;
 }
 
-.submit {
+.modal-button {
     cursor: pointer;
     border: none;
     display: flex;
@@ -280,7 +287,7 @@ color:$primary-text-color;
 
 }
 
-.submit:hover,
-.submit:focus {
+.modal-button:hover,
+.modal-button:focus {
     background-color: $hover-color;
 }

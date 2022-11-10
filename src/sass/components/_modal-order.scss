@@ -59,6 +59,7 @@
   right: 15px;
   z-index: 1;
 
+  border: none;
   background-color: $main-background-color;
 
   cursor: pointer;
@@ -114,6 +115,7 @@
   color: $primary-text-color;
   border: 1px solid $primary-text-color;
   border-radius: 16px;
+  outline: none;
 
   cursor: pointer;
 
@@ -348,6 +350,7 @@ option {
 
   margin: 0 auto;
   border: none;
+  border-radius: 16px;
 
   background-color: $primary-button-color;
   color: $primary-text-color;

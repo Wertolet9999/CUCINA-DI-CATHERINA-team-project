@@ -1,5 +1,5 @@
-<header class="header">
-
+<div class="header" id="home">
+    <!--Web Studio-->
     <div class="container">
       <nav class="main-nav">
         <ul class="main-nav__logo">
@@ -19,16 +19,16 @@
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a
-              href="#"class="main-nav__link">Home</a>
+              href="#home"class="main-nav__link">Home</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Store</a>
+            <a href="#store" class="main-nav__link">Store</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Recipe</a>
+            <a href="#recipes" class="main-nav__link">Recipes</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Gallery</a>
+            <a href="#gallery" class="main-nav__link">Gallery</a>
           </li>
         </ul>
         <ul>
@@ -47,8 +47,9 @@
       </button>
     </nav>
     </div>
-  </header>
-  <div class="backdrop is-hidden" data-modal-contact>
+  </div>
+</div>
+  <!-- <div class="backdrop is-hidden" data-modal-contact>
     <div class="modal">
       <button type="button" class="modal-close-button" data-contact-close>
         <svg class="close-icon" width="32" height="32">
@@ -56,7 +57,7 @@
         </svg>
       </button>
       <p class="form-title">Leave your contacts and we will contact you</p>
-      <form class="modal-form">
+      <form class="modal-form" autocomplete="off">
         <label class="modal-label" for="name">Name</label>
         <div class="modal-wrap">
           <input class="modal-input" placeholder="Yuliia" type="text" name="name" id="name"
@@ -66,7 +67,7 @@
         <label class="modal-label" for="phone">Telephone</label>
         <div class="modal-wrap">
           <input class="modal-input" placeholder="+380" type="tel" name="phone" id="phone"
-           pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+           pattern="\+\d*"
           minlength="13"
           maxlength="13" required/>
         </div>
@@ -128,4 +129,4 @@
       Contact us
     </button>
   </nav>
-  </div>
+  </div> -->
