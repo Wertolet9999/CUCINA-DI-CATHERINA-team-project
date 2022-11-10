@@ -1,12 +1,12 @@
 /*recipes*/
 
 .section-recipes {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
