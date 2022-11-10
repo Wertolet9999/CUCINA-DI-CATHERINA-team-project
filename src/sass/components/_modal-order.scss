@@ -7,6 +7,7 @@
 
   background-color: rgba(255, 255, 255, 0.2);
   opacity: 1;
+  z-index: 10;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -329,16 +330,15 @@ option {
 .checkbox__icon {
   width: 18px;
   height: 18px;
+  padding: 1px;
   margin-right: 14px;
   background-color: $main-background-color;
   border: 2px solid $primary-text-color;
+  fill: transparent;
 
   .checkbox__input:checked + & {
-    background-image: url('../images/icon-checked.svg');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
     background-color: $hover-color;
+    fill: $primary-text-color;
   }
 }
 

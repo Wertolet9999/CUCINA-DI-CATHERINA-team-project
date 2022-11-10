@@ -1,7 +1,7 @@
 <div class="backdrop-order is-hidden" data-modal>
     <div class="modal-order">
-        <button class="modal-order__close-button" data-modal-close>
-            <svg class="modal-order__icon"  width="32" height="32">
+        <button class="modal-order__close-button" onclick="openModal()">
+            <svg class="modal-order__icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
@@ -34,7 +34,7 @@
                     <li class="contact__item">
                         <label for="telephone" class="contact__label">Telephone</label>
                         <input type="text" name="telephone" id="telephone" class="contact__input" placeholder="+380"
-                        pattern="^\+380\d{3}\d{2}\d{2}\d{2}$" minlength="13" maxlength="13">
+                            pattern="^\+380\d{3}\d{2}\d{2}\d{2}$" minlength="13" maxlength="13">
                     </li>
 
                     <li class="contact__item contact__item--city">
@@ -117,8 +117,11 @@
                 <label class="checkbox__label">
 
                     <input type="checkbox" name="policy" class="checkbox__input">
-                    <span class="checkbox__icon"></span>
-                    <span class="checkbox__text">Do not call to confirm</span>
+                    <!-- <span class="checkbox__icon">
+                    </span> -->
+                    <svg class="checkbox__icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-checked"></use>
+                    </svg> <span class="checkbox__text">Do not call to confirm</span>
                 </label>
             </div>
 
