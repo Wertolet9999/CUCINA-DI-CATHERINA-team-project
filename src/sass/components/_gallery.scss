@@ -1,0 +1,100 @@
+.section-gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.slideshow-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+
+  @media screen and (min-width: 415px) {
+    width: 415px;
+  }
+
+  @media screen and(min-width:$tablet) {
+    gap: 32px;
+    width: 1020px;
+  }
+
+}
+.gallery-container {
+  margin-bottom: 4px;
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 8px;
+  }
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 8px;
+  }
+}
+
+.gallery__image {
+  border-radius: 8px;
+}
+
+.mySlides {
+  display: none;
+}
+.ellipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.ellipse___icon {
+  width: 8px;
+  height: 8px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  fill: $white-text-color;
+  width: 16px;
+  height: 16px;
+  @media screen and(min-width:$tablet) {
+    width: 32px;
+    height: 32px;
+  }
+  @media screen and(min-width:$desktop) {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.next {
+  @media screen and(min-width:$desktop) {
+    right: -48px;
+  }
+}
+
+.prev {
+  @media screen and(min-width:$desktop) {
+    left: -48px;
+  }
+}
+
+.active {
+  border-radius: 50%;
+  border: 1px solid #f3f3f3;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

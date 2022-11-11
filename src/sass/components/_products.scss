@@ -1,0 +1,210 @@
+.our-products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  &__slider {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  &__slider-btn {
+    position: absolute;
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+  &__btn-next {
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__btn-prev {
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__slider-icon {
+    display: block;
+    fill: $primary-text-color;
+
+    @media screen and (min-width: $tablet) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 24px 0;
+
+    @media screen and (min-width: $tablet) {
+      gap: 0;
+      padding: 32px 0 0;
+    }
+  }
+
+  &__list-inner {
+    @media screen and (min-width: $tablet) {
+      width: 406px;
+      height: 179px;
+    }
+  }
+
+  &__list-inner:nth-child(2n + 2) {
+    @media screen and (min-width: $tablet) {
+      margin-top: 80px;
+    }
+  }
+
+  &__list-inner:nth-child(2n + 1) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 58px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+
+    @media screen and (max-width: 369px) {
+      gap: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      gap: 64px;
+      align-items: flex-start;
+      &--position {
+        position: relative;
+        bottom: 40px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      gap: 90px;
+    }
+  }
+
+  &__item:nth-child(2n + 2) {
+    justify-content: flex-end;
+
+    @media screen and (min-width: $tablet) {
+      align-items: flex-end;
+    }
+  }
+
+  &__list-img {
+    width: 156px;
+    height: 156px;
+    border-radius: 291px;
+    box-shadow: 0px 0px 50px #7c7070;
+
+    @media screen and (max-width: 369px) {
+      width: 145px;
+      height: 145px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 349px;
+      height: 349px;
+    }
+  }
+
+  &__list-title {
+    font-size: 20px;
+    line-height: calc(24px / 20px);
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 369px) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: calc(39px / 32px);
+    }
+  }
+
+  &__content {
+    display: none;
+    line-height: calc(20px / 16px);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &__list-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 4.5px 18.5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    text-align: center;
+    line-height: calc(20px / 16px);
+
+    color: inherit;
+    background-color: $primary-button-color;
+
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color $animation;
+    
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+    }
+
+    @media screen and (max-width: 369px) {
+      font-size: 13px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+      font-size: 20px;
+      line-height: calc(24px / 20px);
+      padding: 9.5px 57px;
+    }
+  }
+}
+
+.container--padding {
+  @media screen and (min-width: $desktop) {
+    padding: 0 180px;
+  }
+}
+
+.mySlides {
+  display: none;
+}
+
+// слайдер
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

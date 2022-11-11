@@ -1,0 +1,136 @@
+/*recipes*/
+
+.section-recipes {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.recipes__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: space-around;
+  }
+}
+
+.recipes__item {
+  display: flex;
+  justify-content: end;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.recipes__item--append {
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.recipes__box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipes__box-video {
+  position: relative;
+
+  width: 246px;
+  padding-top: 235px;
+
+
+  border-radius: 8px;
+  background-color: #b7b5b5;
+
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    padding-top: 307px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 442px;
+    padding-top: 307px;
+  }
+}
+
+.recipes__video {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.recipes__box-image {
+  position: absolute;
+  overflow: hidden;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.recipes__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 70px;
+  height: 70px;
+  background-color: rgba(243, 243, 243, 0.9);
+  border-radius: 50%;
+  border: none;
+}
+
+.recipes__icon-play {
+  fill: $main-background-color;
+}
+
+.recipes__title {
+  margin: 0;
+  margin-top: 8px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}

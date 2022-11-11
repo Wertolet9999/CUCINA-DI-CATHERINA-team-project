@@ -1,0 +1,94 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: "Roboto-Normal";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("./fonts/Montserrat/static/Montserrat-Black.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Normal";
+  src: url("./fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter-Normal";
+  src: url("./fonts/Inter/static/Inter-Regular.ttf");
+}
+body {
+  font-family: Montserrat-Normal, sans-serif;
+  background-color: #100F0F;
+  color: #F3F3F3;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 415px) {
+  .container {
+    width: 415px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .container {
+    width: 1020px;
+    padding: 0 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 85px;
+  }
+}/*# sourceMappingURL=main.css.map */

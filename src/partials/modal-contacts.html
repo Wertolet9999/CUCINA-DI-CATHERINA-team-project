@@ -1,0 +1,81 @@
+<div class="backdrop is-hidden" data-modal-contact>
+    <div class="modal">
+      <button type="button" class="modal-close-button" data-contact-close>
+        <svg class="close-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="form-title">Leave your contacts and we will contact you</p>
+      <form class="modal-form" autocomplete="off">
+        <label class="modal-label" for="name">Name</label>
+        <div class="modal-wrap">
+          <input class="modal-input" placeholder="Yuliia" type="text" name="name" id="name"
+           pattern="^[a-zA-Z]{1,15}" title="Surname must include only letters" />
+
+        </div>
+        <label class="modal-label" for="phone">Telephone</label>
+        <div class="modal-wrap">
+          <input class="modal-input" placeholder="+380" type="tel" name="phone" id="phone"
+           pattern="\+\d*"
+          minlength="13"
+          maxlength="13" required/>
+        </div>
+        <label class="modal-label" for="email">Email</label>
+        <div class="modal-wrap">
+          <input class="modal-input" placeholder="Contact@gmail.com" type="email" name="mail" id="email" />
+          
+        </div>
+        <div class="modal-area">
+        <textarea
+          class="modal-input modal-area"
+          id="comment"
+          placeholder="How can we help you?"
+        ></textarea>
+        </div>
+        </label>
+        <button type="submit" class="modal-button">Contact us</button>
+      </form>
+      
+    </div>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="close-icon" width="32" height="32">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+      <ul class="mobile-logo">
+        <li class="mobile-logo__item">
+          <a href="index.html" class="mobile-logo__link">
+            <svg
+              class="mobile-logo__link-icon"
+              width="28"
+              height="28"
+            >
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+            CUCINA</a
+          >
+
+    </ul>
+    <div>
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a href="#"class="mobile-nav__link">Home</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Store</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Recipes</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Gallery</a>
+      </li>
+    </ul>
+    </div>
+    <button type="button" class="menu-nav__button" data-contact-open-menu>
+      Contact us
+    </button>
+  </nav>
+  </div>

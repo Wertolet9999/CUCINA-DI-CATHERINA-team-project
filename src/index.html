@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/main.scss" />
+    
+  </head>
+  <body>
+    <header class="header-section">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/modal-contacts.html"></include>
+      <include src="./partials/modal-order.html"></include>
+      <include src="./partials/hero.html"></include>
+    </header>
+    <main>
+      
+      <include src="./partials/products.html"></include>
+      <include src="./partials/recipes.html"></include>
+      <include src="./partials/gallery.html"></include>
+    </main>
+    <footer>
+      <include src="./partials/footer.html"></include>
+    </footer>
+    <script src="./js/vertical-slider.js"></script>
+    <script src="./js/gallery-script.js"></script>
+    <script src="./js/contact.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

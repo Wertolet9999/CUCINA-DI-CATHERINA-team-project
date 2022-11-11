@@ -1,0 +1,124 @@
+<div class="backdrop-order is-hidden" data-modal>
+    <div class="modal-order">
+        <button class="modal-order__close-button" onclick="openModal()">
+            <svg class="modal-order__icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <form class=" order-form js-speaker-form" autocomplete="off">
+
+            <p class="order-form__title">
+                Your ordering
+            </p>
+
+            <div class="contact">
+                <p class="contact__title">
+                    Contacts
+                </p>
+
+                <ul class="contact__form">
+                    <li class="contact__item">
+                        <label for="surname" class="contact__label">Surname</label>
+                        <input type="text" name="surname" id="surname" class="contact__input" placeholder="Krutas"
+                            pattern="^[a-zA-Z]{1,15}" title="Surname must include only letters">
+
+                    </li>
+
+                    <li class="contact__item">
+                        <label for="name" class="contact__label">Name</label>
+                        <input type="text" name="name" id="name" class="contact__input" placeholder="Yuliia "
+                            pattern="^[a-zA-Z]{1,15}" title="Surname must include only letters">
+                    </li>
+
+                    <li class="contact__item">
+                        <label for="telephone" class="contact__label">Telephone</label>
+                        <input type="text" name="telephone" id="telephone" class="contact__input" placeholder="+380"
+                            pattern="^\+380\d{3}\d{2}\d{2}\d{2}$" minlength="13" maxlength="13">
+                    </li>
+
+                    <li class="contact__item contact__item--city">
+                        <label for="city" class="contact__label">City</label>
+
+                        <div class="select-wrapper">
+                            <svg class="contact__icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-select"></use>
+                            </svg>
+                            <select class="contact__input contact__input--city" name="city" id="sity">
+                                <option value="1" checked>Kyiv</option>
+                                <option value="2">Lviv</option>
+                                <option value="3">Mariupol</option>
+                            </select>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="delivery">
+                <p class="delivery__title">
+                    Delivery
+                </p>
+                <div class="delivery__method">
+
+                    <input class="delivery__radio" type="radio" name="delivery" value="department" id="department" />
+
+                    <label for="department" class="delivery__label delivery__label--left">
+                        Delivery to department of Nova Poshta
+                    </label>
+
+                    <input class="delivery__radio" type="radio" name="delivery" value="courier" id="courier" />
+
+                    <label for="courier" class="delivery__label delivery__label--right">
+                        Delivery by courier of Nova Poshta
+                    </label>
+
+                </div>
+
+
+                <label class="delivery__point" for="department" class="contact__label"> Select department</label>
+                <div class="select-wrapper">
+                    <svg class="contact__icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-select"></use>
+                    </svg>
+                    <select class="delivery__select" name="department" id="department-number">
+
+                        <option class="delivery__department" value="1">Department</option>
+                        <option class="delivery__department" value="2">Department</option>
+                        <option class="delivery__department" value="3">Department</option>
+
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div class="payment">
+                <p class="payment__title">
+                    Payment method
+                </p>
+                <label class="payment__label">
+                    <input class="payment__radio" type="radio" name="payment" value="card" checked />
+                    <span class="payment__icon"></span>
+                    Credit card (Visa, Mastercard, ApplePay)
+                </label>
+                <label class="payment__label">
+                    <input class="payment__radio" type="radio" name="payment" value="cash" />
+                    <span class="payment__icon"></span>
+                    Cash on delivery
+                </label>
+            </div>
+            <a class="order-form__comment" href="#">Add a comment to the order</a>
+            <div class="checkbox">
+                <label class="checkbox__label">
+                    <input type="checkbox" name="policy" class="checkbox__input">
+                    <svg class="checkbox__icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-checked"></use>
+                    </svg> <span class="checkbox__text">Do not call to confirm</span>
+                </label>
+            </div>
+
+            <button type="submit" class="button order-form__button">Buy now</button>
+        </form>
+    </div>
+</div>

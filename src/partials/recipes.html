@@ -1,0 +1,127 @@
+<!--recipes-->
+
+<section class="section-recipes" id="recipes">
+  <div class="container">
+    <h2 class="visually-hidden">Відео рецепти</h2>
+    <ul class="recipes__list">
+      <li class="recipes__item">
+        <div class="recipes__box">
+          <div class="recipes__box-video">
+            <div
+              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
+            >
+              <picture class="recipes__box-image">
+                <source
+                  srcset="
+                    ./images/img-recipes/tomato-paste-246@1x.jpg 1x,
+                    ./images/img-recipes/tomato-paste-246@2x.jpg 2x
+                  "
+                  media="(max-width:414px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-recipes/tomato-paste-450@1x.jpg 1x,
+                    ./images/img-recipes/tomato-paste-450@2x.jpg 2x
+                  "
+                  media="(min-width:1020px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-recipes/tomato-paste-442@1x.jpg 1x,
+                    ./images/img-recipes/tomato-paste-442@2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <img
+                  srcset="
+                    ./images/img-recipes/tomato-paste-246@1x.jpg 1x,
+                    ./images/img-recipes/tomato-paste-246@2x.jpg 2x
+                  "
+                  src="./images/img-recipes/tomato-paste.jpg"
+                  alt="Дівчина з пастой"
+                />
+              </picture>
+
+              <button class="recipes__button">
+                <svg class="recipes__icon-play" width="24" height="24">
+                  <use href="./images/icons.svg#icon-play"></use>
+                </svg>
+              </button>
+            </div>
+            <div style="display: none">
+              <iframe
+                class="recipes__video"
+                src="https://www.youtube.com/embed/ONgCu3l63DE?start=15"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              >
+            </div>
+          </div>
+          <h3 class="recipes__title">Tomato paste</h3>
+        </div>
+      </li>
+
+      <li class="recipes__item recipes__item--append">
+        <div class="recipes__box">
+          <div class="recipes__box-video">
+            <div
+              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
+            >
+              <picture class="recipes__box-image">
+                <source
+                  srcset="
+                    ./images/img-recipes/bell-paper-paste-246@1x.jpg 1x,
+                    ./images/img-recipes/bell-paper-paste-246@2x.jpg 2x
+                  "
+                  media="(max-width:414px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-recipes/bell-paper-paste-450@1x.jpg 1x,
+                    ./images/img-recipes/bell-paper-paste-450@2x.jpg 2x
+                  "
+                  media="(min-width:1020px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-recipes/bell-paper-paste-442@1x.jpg 1x,
+                    ./images/img-recipes/bell-paper-paste-442@2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <img
+                  srcset="
+                    ./images/img-recipes/bell-paper-paste-246@1x.jpg 1x,
+                    ./images/img-recipes/bell-paper-paste-246@2x.jpg 2x
+                  "
+                  src="./images/img-recipes/bell-paper-paste.jpg"
+                  alt="Хлопчик та дівчина з пастой"
+                />
+              </picture>
+
+              <button class="recipes__button">
+                <svg class="recipes__icon-play" width="24" height="24">
+                  <use href="./images/icons.svg#icon-play"></use>
+                </svg>
+              </button>
+            </div>
+            <div style="display: none">
+              <iframe
+                class="recipes__video"
+                src="https://www.youtube.com/embed/f3lXwP-qbuw?start=40"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <h3 class="recipes__title">Bell pepper pasta</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
