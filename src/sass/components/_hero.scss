@@ -4,7 +4,7 @@
 }
 .section-hero {
   padding-top: 40px;
-  // background: linear-gradient(237.05deg, #6f6666 1.42%, #100f0f 45.36%);
+
   &___button {
     background-color: $primary-button-color;
     border-radius: 16px;
@@ -39,7 +39,6 @@
       content: '';
       position: absolute;
       left: 0;
-      // top: 0;
       bottom: 4px;
       width: 1px;
       height: 66px;
@@ -116,7 +115,7 @@
   z-index: -5;
   bottom: 0;
   left: 0;
-  // opacity: 0.2;
+
 }
 .section-hero__picture-hero {
   position: absolute;
@@ -136,12 +135,6 @@
 @media screen and (min-width: $tablet) {
   .section-hero {
     padding-top: 72px;
-    // background: linear-gradient(
-    //   228.52deg,
-    //   rgba(111, 102, 102, 0.9) 4.71%,
-    //   rgba(16, 15, 15, 0.9) 39.77%,
-    //   rgba(16, 15, 15, 0.9) 44.21%
-    // );
   }
   .section-hero___button {
     max-width: 302px;
