@@ -1,0 +1,2 @@
+var slideIndexH=1;function plusSlidesH(e){showSlidesH(slideIndexH+=e)}function currentSlideH(e){showSlidesH(slideIndexH=e)}function showSlidesH(e){var s,l=document.getElementsByClassName("mySlidesH"),d=document.getElementsByClassName("dot");for(e>l.length&&(slideIndexH=1),e<1&&(slideIndexH=l.length),s=0;s<l.length;s++)l[s].style.display="none";for(s=0;s<d.length;s++)d[s].className=d[s].className.replace(" active","");l[slideIndexH-1].style.display="block",d[slideIndexH-1].className+=" active"}showSlidesH(slideIndexH);
+//# sourceMappingURL=index.fa958dee.js.map

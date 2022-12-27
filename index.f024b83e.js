@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.querySelector("[data-contact-open]"),openModalBtnMenu:document.querySelector("[data-contact-open-menu]"),closeModalBtn:document.querySelector("[data-contact-close]"),modal:document.querySelector("[data-modal-contact]")};function t(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",t),e.openModalBtnMenu.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.f024b83e.js.map
