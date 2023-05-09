@@ -2,10 +2,10 @@
   "name": "team-page",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Wertolet9999.github.io/team-page",
+  "homepage": "https://Wertolet9999.github.io/CUCINA-DI-CATHERINA-team-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-page/"
+    "build": "parcel build src/*.html --public-url /CUCINA-DI-CATHERINA-team-project/"
   },
   "repository": {
     "type": "git",
